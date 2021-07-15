@@ -5,6 +5,9 @@ filetype plugin indent on
 " include recursive folders for path
 set path=.,/usr/include,**,,
 
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+
 " Change tabs to 2 spaces
 set expandtab
 set tabstop=2
@@ -25,6 +28,7 @@ set nocompatible
 " Reload file if changed outside of vim
 set autoread
 
+" 3rd party color scheme - Download from github
 colorscheme zenburn
 
 " Add line numbers
@@ -58,6 +62,8 @@ set cmdheight=1
 set showtabline=2
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(3l,%02c%03V%)
 
+" Changes color of the tabline
+" - Currently set to match my tmux theme
 "highlight TabLineFill ctermfg=Black ctermbg=DarkGrey
 highlight TablineSel ctermfg=136
 highlight Tabline ctermfg=Grey
